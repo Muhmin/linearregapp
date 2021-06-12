@@ -7,5 +7,5 @@ Point 5. Create a folder called .ebextensions
 Point 6. Inside .ebextensions we need a python.config file.
 Point 7. Mention the commands in python.config
             option_settings:
-              "aws:elasticbeanstalk:container:python":
-                WSGIPath: application:application
+              "aws:elasticbeanstalk:container:python": #looking for container as py application and aws-elastic beansstalk
+                WSGIPath: application:application #cloud will look for this command to execute. its the file name and instance name
